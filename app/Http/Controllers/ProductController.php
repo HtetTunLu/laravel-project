@@ -61,7 +61,7 @@ class ProductController extends Controller
   public function update(Request $request, Product $product)
   {
     // $request->merge(['detail' => 'updated in controller']);
-    dd($request);
+    // dd($request);
     $request->validate([
       'name' => 'required',
       'detail' => 'required',
